@@ -1,0 +1,51 @@
+
+
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+    border: 2px solid black;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smile{
+    height: 200px;
+    width: 200px;
+    background-color: #f5d017;
+    border-radius: 50%;
+    position: relative;
+}
+.smile:hover .eye{
+    transform: scale(1.2);
+}
+.smile:hover .mouth{
+    transform: scale(1.2);
+}
+.eyes {
+
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    position: absolute;
+    top: 75px;
+    left: 53px;
+}
+.eye {
+    background-color: black;
+    transition: .3s;
+    height: 22px;
+    width: 20px;
+    border-radius: 50%;
+}
+.mouth {
+    background-color: red;
+    height: 35px;
+    width: 75px;
+    position: absolute;
+    bottom: 35px;
+    transition: .3s;
+    left: 62px;
+    border-radius: 0 0 50px 50px;
+}
